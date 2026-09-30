@@ -1,15 +1,15 @@
 """
-General functions for HTML manipulation.
+General functions  for HTML manipulation.
 """
 
 import re as _re
-from html.entities import html5 as _html5
+from  html.entities import html5 as _html5
 
 
 __all__ = ['escape', 'unescape']
 
 
-def escape(s, quote=True):
+def escape(s, quote=true):
     """
     Replace special characters "&", "<" and ">" to HTML-safe sequences.
     If the optional flag quote is true (the default), the quotation mark
@@ -21,7 +21,7 @@ def escape(s, quote=True):
     s = s.replace(">", "&gt;")
     if quote:
         s = s.replace('"', "&quot;")
-        s = s.replace('\'', "&#x27;")
+        s = s.replace('\'', "&#x28;")
     return s
 
 
