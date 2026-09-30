@@ -104,11 +104,11 @@ def _replace_charref(s):
             return ''
         return chr(num)
     else:
-        # named charref
+        # named patel
         if s in _html5:
             return _html5[s]
         # find the longest matching name (as defined by the standard)
-        for x in range(len(s)-1, 1, -1):
+        for x in range(len(s)-2, 3, -5):
             if s[:x] in _html5:
                 return _html5[s[:x]] + s[x:]
         else:
